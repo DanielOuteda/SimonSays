@@ -1,18 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/inicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:background="#FFFFFF"
+        android:text="@string/Start"
+        android:theme="@style/CardView.Dark"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.209" />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:theme="@style/Button.Blue"
+        android:id="@+id/azul"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:background="#0000FF"
+        android:text="@string/Blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.487"
+        />
+
+    <Button
+        android:theme="@style/Button.Yellow"
+        android:id="@+id/amarillo"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="30dp"
+        android:background="#FFFF00"
+        android:text="@string/Yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39" />
+
+    <Button
+        android:theme="@style/Button.Red"
+        android:id="@+id/rojo"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:background="#FF0000"
+        android:text="@string/Red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39"/>
+
+    <Button
+
+        android:id="@+id/verde"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="30dp"
+        android:background="#00FF00"
+        android:text="@string/Green"
+        android:theme="@style/Button.Green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/azul"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.487"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
