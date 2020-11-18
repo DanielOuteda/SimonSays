@@ -1,6 +1,5 @@
 package com.example.simonsays
 
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -13,19 +12,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val rojo: Button=findViewById(R.id.rojo)
-        val azul: Button=findViewById(R.id.azul)
-        val amarillo: Button=findViewById(R.id.amarillo)
-        val verde: Button=findViewById(R.id.verde)
+        val red: Button=findViewById(R.id.red)
+        val blue: Button=findViewById(R.id.blue)
+        val green: Button=findViewById(R.id.green)
+        val yellow: Button=findViewById(R.id.yellow)
 
         val toast1=Toast.makeText(this, "Error", Toast.LENGTH_SHORT)
         val toast2=Toast.makeText(this, "Good", Toast.LENGTH_SHORT)
 
-        val inicio: Button = findViewById(R.id.inicio)
-        inicio.setOnClickListener(){
+        val start: Button = findViewById(R.id.inicio)
+        start.setOnClickListener(){
 
             println("1")
-            simonDice(rojo,azul,amarillo,verde,toast2)
+            simonsays(red,blue,yellow,green,toast2)
             toast1.show()
         }
     }
@@ -84,7 +83,7 @@ private fun mostrarArray1(array1: ArrayList<Int>): ArrayList<Int> {
     return array1
 }
 
-private fun simonDice(rojo: Button,azul: Button,amarillo: Button,verde: Button,toast: Toast) {
+private fun simonsays(rojo: Button, azul: Button, amarillo: Button, verde: Button, toast: Toast) {
     var array1 = ArrayList<Int>()
 
     var contador=0

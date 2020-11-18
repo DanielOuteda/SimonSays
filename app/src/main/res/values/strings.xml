@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">SimonSays</string>
-    <string name="Blue">Blue</string>
-    <string name="Yellow">Yellow</string>
-    <string name="Green">Green</string>
-    <string name="Start">Start</string>
-    <string name="Red">Red</string>
+    <string name="blue">Blue</string>
+    <string name="yellow">Yellow</string>
+    <string name="green">Green</string>
+    <string name="start">Start</string>
+    <string name="red">Red</string>
 </resources> 
